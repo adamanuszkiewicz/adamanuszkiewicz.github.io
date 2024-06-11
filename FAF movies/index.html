@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>The Fast and The Furious Movie Webpage Project</title>
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                <img class="faf__logo" src="Site-logo.webp" alt="">
+                <ul class="nav__links">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                    <li><a href="#movies" class="nav__link nav__linl-primary">Movies</a></li>
+                </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#home" class="menu__link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#contact" class="menu__link" onclick="closeMenu()">Contact</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="menu__link no-cursor" class="menu__link" onclick="closeMenu()">Movies</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="overlay">
+                </div>
+            </div>
+        </nav>    
+    </section>    
+    <section id="search">
+        <div class="search__wrapper">
+            <h1 class="search__info">FAST Movies</h1>
+            <h2 class="fast__movie">Find your favorite FAST Movie!</h2>
+            <input type="text" placeholder=" FAST Search">
+        </div>
+        <div class="movie__container">
+            <div class="movie__list">
+                <div class="movie">
+                    <div class="movie__card">
+                        <div class="movie__card--container">
+                            <div class="movie__description">
+                                <div class="movie__title">
+                                    <h3>${movie.Title}</h4>
+                                </div>
+                                <div class="movie__year">
+                                    <p>${movie.Year}</p>
+                                </div>
+                                <div class="movie__poster">
+                                    <img src=${movie.Poster}>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>    
+            </div>   
+        </div>    
+    </section>
+    <footer>
+       
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
